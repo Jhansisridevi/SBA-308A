@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montagu Slab"
-    />
-    <title>SPA</title>
-  </head>
-  <body>
-    <h1>Single Page Web Application</h1>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montagu Slab" />
+  <title>SPA</title>
+</head>
+<body>
+  <h1>Single Page Web Application</h1>
+  <div class="search-container">
+    <input type="date" id="search-input">
+    <input type="date" id="search-input1">
+    <button id="search-button">Search</button>
+  </div>
+  <div class="card-container" id="card-container">
+  </div>
+  <div class="pagination" id="pagination">
+    <button id="prev-page">Previous</button>
+    <span id="page-number">1</span>
+    <button id="next-page">Next</button>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
 </html>
