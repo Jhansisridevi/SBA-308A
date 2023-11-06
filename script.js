@@ -1,4 +1,4 @@
-import { dateHandler } from "./display.js";
+import { dateHandler } from "./modules/display.js";
 
 const searchButton = document.getElementById("search-button");
 const searchInput = document.getElementById("search-input");
