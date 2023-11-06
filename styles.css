@@ -4,16 +4,21 @@ body {
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  background-image: url("spa_cover.png");
+  background-image: url("cover.png");
   background-size: cover;
   justify-content: center;
   /* background: #39abce; */
 }
-h1 {
-  color: #f8e8e8;
+h1,
+h3 {
+  font-family: Bree Serif;
+  color: #000000;
   justify-content: center;
+  align-items: center;
 }
-
+#sub-heading {
+  margin-top: 2px;
+}
 .search-container {
   margin: 20px 0;
 }
@@ -64,9 +69,10 @@ h1 {
   opacity: 1;
 }
 .card h2 {
-  font-size: 13px;
+  font-family: Bree Serif;
+  font-size: 17px;
   margin: 0;
-  color: #faf4f4;
+  color: #ffffff;
 }
 /* description to be added*/
 /* .card p {
@@ -92,25 +98,25 @@ h1 {
 #prev-page,
 #next-page,
 #search-button {
-    background-color: #080808;
-    color: #fff;
-    padding: 10px 10px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    margin: 5px;
-    margin-top: 3%;
-    border-radius: 5px;
+  background-color: #080808;
+  color: #fff;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px;
+  margin-top: 3%;
+  border-radius: 5px;
 }
 
 #prev-page:disabled,
 #next-page:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
 #page-number {
-    margin: 0 10px;
-    font-weight: bold;
-    font-size: 18px;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 18px;
 }
