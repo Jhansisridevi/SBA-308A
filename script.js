@@ -86,7 +86,7 @@ function displayResults(data, currentPage) {
       const totalPages = Math.ceil(totalResults / itemsPerPage); //to determine total number of pages
       pageNumber.textContent = currentPage;
 
-      prevPageButton.disabled = currentPage === 1; //disabling previous button 
+      prevPageButton.disabled = currentPage === 1; //disabling previous button when current page is 1
       nextPageButton.disabled = currentPage === totalPages; //disabling next button when current page and total page are equal
     } else {
       pagination.style.display = "none";
