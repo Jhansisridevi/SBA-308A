@@ -47,6 +47,7 @@ async function fetchResults(page) {
       console.error("Error fetching data:", error);
     });
 }
+//function to display the results fetched
 function displayResults(data, currentPage) {
   cardContainer.innerHTML = "";
   pagination.style.display = "block";
@@ -82,11 +83,11 @@ function displayResults(data, currentPage) {
       }
       const totalResults = data.length;
       console.log(totalResults);
-      const totalPages = Math.ceil(totalResults / itemsPerPage); //to determine total number of pages 
+      const totalPages = Math.ceil(totalResults / itemsPerPage); //to determine total number of pages
       pageNumber.textContent = currentPage;
 
-      prevPageButton.disabled = currentPage === 1;
-      nextPageButton.disabled = currentPage === totalPages;
+      prevPageButton.disabled = currentPage === 1; //disabling previous button 
+      nextPageButton.disabled = currentPage === totalPages; //disabling next button when current page and total page are equal
     } else {
       pagination.style.display = "none";
       cardContainer.innerHTML = "No results found.";
